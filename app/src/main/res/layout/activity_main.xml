@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maCoordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-179dp">
+
+
+        <Button
+            android:id="@+id/student_by_id_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/getAllStudents_button"
+            android:layout_marginBottom="30dp"
+            android:enabled="false"
+            android:onClick="onClick"
+            android:text="@string/gsbid" />
+
+        <Button
+            android:id="@+id/add_student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="250dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/addstudent" />
+
+        <Button
+            android:id="@+id/getAllStudents_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/add_student"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/gasb" />
+
+        <EditText
+            android:id="@+id/student_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/student_by_id_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:elegantTextHeight="true"
+            android:ems="9"
+            android:hint="@string/esid"
+            android:inputType="textPersonName"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
