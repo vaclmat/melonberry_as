@@ -5,69 +5,64 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="horizontal">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="horizontal">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="-179dp">
 
-
-        <Button
-            android:id="@+id/student_by_id_button"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/getAllStudents_button"
-            android:layout_marginBottom="30dp"
-            android:enabled="false"
-            android:onClick="onClick"
-            android:text="@string/gsbid" />
+            android:background="@drawable/box"
+            app:srcCompat="@drawable/melonbery"
+            android:contentDescription="@string/todo"
+            android:layout_above="@id/navody_button"
+            android:adjustViewBounds="true"
+            android:maxWidth="200dp"
+            android:maxHeight="200dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            />
+
 
         <Button
-            android:id="@+id/add_student"
+            android:id="@+id/UserInfo_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="250dp"
+            android:layout_marginBottom="150dp"
             android:enabled="false"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="@string/addstudent" />
+            android:text="@string/addstudent"
+            tools:ignore="UsingOnClickInXml" />
 
         <Button
-            android:id="@+id/getAllStudents_button"
+            android:id="@+id/navody_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@id/add_student"
+            android:layout_above="@id/UserInfo_button"
             android:layout_alignParentBottom="false"
             android:layout_marginBottom="10dp"
             android:enabled="false"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="@string/gasb" />
+            android:text="@string/gasb"
+            tools:ignore="UsingOnClickInXml" />
 
-        <EditText
-            android:id="@+id/student_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@id/student_by_id_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
-            android:autofillHints=""
-            android:elegantTextHeight="true"
-            android:ems="9"
-            android:hint="@string/esid"
-            android:inputType="textPersonName"
-            android:verticalScrollbarPosition="defaultPosition" />
 
-        <androidx.appcompat.widget.Toolbar
+                <androidx.appcompat.widget.Toolbar
             android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

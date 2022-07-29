@@ -1,22 +1,16 @@
 <resources>
-    <string name="app_name">Student Database</string>
-    <string name="menu_title">Fill you credentials here</string>
-    <string name="client_id">Client ID</string>
-    <string name="client_secret">Client Secret</string>
-    <string name="menu_item1">Credentials</string>
-    <string name="gasb">Get All Students</string>
-    <string name="gsbid">Get Student By ID</string>
-    <string name="sid">student ID</string>
-    <string name="menu_item2">Logout</string>
-    <string name="addstudent">Add Student</string>
-    <string name="deletestudent">Delete Student By ID</string>
-    <string name="result_m">result message</string>
-    <string name="fn">first name</string>
-    <string name="ln">last name</string>
-    <string name="gender">gender</string>
-    <string name="as_button">Add Student</string>
-    <string name="modifysbid">Modify Student By ID</string>
-    <string name="modifybutton">Modify Student</string>
-    <string name="delstudent">Delete Student</string>
-    <string name="esid">enter student ID</string>
+    <string name="app_name">MELONBERRY</string>
+    <string name="menu_title">Zadej přihlašovací data</string>
+    <string name="client_id">Uživatelské jméno</string>
+    <string name="client_secret">Heslo</string>
+    <string name="menu_item1">Přihlášení</string>
+    <string name="gasb">Návody</string>
+    <string name="sid">Uživatelské jméno:</string>
+    <string name="menu_item2">Odhlášení</string>
+    <string name="addstudent">Informace o uživateli</string>
+    <string name="fn">Jméno:</string>
+    <string name="ln">Příjmení:</string>
+    <string name="gender">Celé jméno:</string>
+    <string name="todo">Melonberry logo</string>
+    <string name="emailet">Email:</string>
 </resources>
